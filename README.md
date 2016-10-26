@@ -15,7 +15,7 @@ To enhance ;)
 
  1. Edit `docker-compose.yml` file if you want to change mysql parameters
  2. Edit the `database.inc` file in soplanning source code to match with mysql
-container parameters (be careful with IP/hostname !)
+container parameters (use `database` as the db hostname)
  3. Edit docker-compose.yml file if you want to change source code folder
  4. run `docker-compose up`
  5. go to http://localhost to log in
