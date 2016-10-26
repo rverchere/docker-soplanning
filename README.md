@@ -8,6 +8,8 @@ The docker environment uses:
 - [mysql](https://github.com/docker-library/mysql/blob/ae850f69e7414a7c28e8d364ae039fe0a0464e7a/5.5/Dockerfile) container
 - [php-apache](https://github.com/docker-library/php/blob/3cb02a21164bc2bdb8b25ec48886ffcb7e195510/5.6/apache/Dockerfile) container
 
+Tested with Soplanning v1.33.
+
 ## How-to
 To enhance ;)
 
