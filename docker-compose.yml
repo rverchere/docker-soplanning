@@ -1,0 +1,19 @@
+site:
+  build: site
+  ports:
+    - "80:80"
+  volumes:
+    - soplanning/:/var/www/html
+  links:
+    - database
+database:
+  image: mysql:5.5
+  ports:
+    - "3306:3306"
+  volumes:
+    - ./db:/docker-entrypoint-initdb.d
+  environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - MYSQL_DATABASE=soplanning
+    - MYSQL_USER=soplanning
+    - MYSQL_PASSWORD=soplanning
